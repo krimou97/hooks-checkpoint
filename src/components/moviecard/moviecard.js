@@ -1,16 +1,17 @@
 import './moviecard.css'
-import {Card} from '@material-ui/core'
+import {Card} from "@material-ui/core";
 
-const Moviecard = (props) =>{
-    const {movies} = props
+
+const MovieCard = (props) => {
+    const {movieprops} = props
     return (
-            <Card className={'card'}>
-                <span>Title:{movies.title} </span>
-                <span>Description:{movies.description} </span>
-                <span>PosterURL:{movies.posterurl} </span>
-                <span>Rating:{movies.rating} </span>
-            </Card>
+        <Card className={'h-card'}>
+            <span>Title : {movieprops.title} </span>
+            <span>Description : {movieprops.description} </span>
+            <span>PosterUrl : {movieprops.posterurl}</span>
+            <span>Rating : {movieprops.rating}</span>
+        </Card>
     )
 }
 
-export default Moviecard;
+export default MovieCard

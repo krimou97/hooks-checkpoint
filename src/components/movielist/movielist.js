@@ -1,14 +1,12 @@
 import './movielist.css'
-import Moviecard from '../moviecard/moviecard'
+import MovieCard from "../moviecard/moviecard";
 
-const Movielist = (props) =>{
-    const {movies} = props
+const MovieList = (props) => {
+    const {moviesprops} = props
     return (
         <div className={'m-list'}>
-            
-            {movies.map(movie => <Moviecard movies={movie} /> )}
+            {moviesprops.map(dd => <MovieCard movieprops={dd}/>)}
         </div>
     )
 }
-
-export default Movielist;
+export default MovieList
